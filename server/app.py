@@ -12,7 +12,7 @@ existing_models = ['Beedle', 'Crossroads', 'M2', 'Panique']
 def index_fn():
     return "Welcome to Flatiron Cars"
 
-#define variable route for /<model> route
+#define variable route for /<model> route => should be a string parameter
 @app.route('/<string:model>')
 def model_fn(model):
     if model in existing_models:
